@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>float-position</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <h1>float and position</h1>
+  <hr>
+  <section id="float">
+    <h3>float 浮动</h3>
+    <p>div1 设置为浮动，div2 的 position 默认为为 static</p>
+    <p>
+      注意，当 div1 左浮动后，div2 盒模型虽然已经占据原来 div1 的位置，但是 div2 中的文字
+      却依然被 div1 所限制环绕在 div1 边框之外。
+    </p>
+    <p>
+      这是因为： <br>
+      <strong>文档流是相对于盒子模型讲的</strong> <br>
+      <strong>文本流是相对于文字讲的</strong> <br>
+      元素设置 float 之后虽然盒模型脱离了文档流，但是却没有脱离文本流，文字依然会认同浮动元素
+      所在的位置，所以文字会围绕浮动元素布局。
+    </p>
+    <div class="div1">
+      我是div1
+    </div>
+    <div class="div2">
+      我是div2
+    </div>
+  </section>
+
+  <section id="relative">
+    <h3>relative 相对定位</h3>
+    <p>div4 设置为 relative</p>
+    <p>
+      注意到 div4 设置为 relative 相对定位之后，不仅盒模型脱离了文档流，文字也脱离了文本流，不会
+      受到 div3 所在位置的限制。
+    </p>
+    <div class="div3">
+      我是div3
+    </div>
+    <div class="div4">
+      我是div4
+    </div>
+  </section>
+
+  <section id="absolute">
+    <h3>absolute 绝对定位</h3>
+    <p>div6 设置为 absolute</p>
+    <p>
+      注意到 div6 设置为 absolute 绝对定位之后，和 relative 一样，既脱离了文档流也脱离了文本流。
+    </p>
+    <div class="div5">
+      我是div5
+    </div>
+    <div class="div6">
+      我是div6
+    </div>
+  </section>
+
+  <section id="fixed">
+    <h3>fixed 相对浏览器窗口定位</h3>
+    <p>div8 设置为 fixed</p>
+    <p>
+      注意到 div8 设置为 fixed 绝对定位之后，和 relative absolute 一样，既脱离了文档流也脱离了文本流。
+    </p>
+    <div class="div7">
+      我是div7
+    </div>
+    <div class="div8">
+      我是div8
+    </div>
+  </section>
+
+  <section id="conclusion">
+    <h1>结论</h1>
+    <p>
+      浮动 float 只是脱离了文档流，没有脱离文本流，下一个元素会占据浮动元素原来的位置，
+      但是文本依然会受到浮动元素位置的限制，而环绕在浮动元素周围。
+    </p>
+    <p>
+      定位 relative absolute fixed 既脱离了文档流，也脱离了文本流，下一个元素和文本都不会受到原来
+      元素的限制，会直接覆盖上去。
+    </p>
+  </section>
+</body>
+</html>
