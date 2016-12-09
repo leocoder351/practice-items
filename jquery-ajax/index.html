@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jquery ajax</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>jquery ajax practice － CNode: Node.js专业中文社区</h1> <br>
+  </header>
+
+  <section id="getData">
+    <h4>查看　GET</h4>
+    <hr>
+    <section>
+      <strong>用户名： </strong> <br>
+      <span class="user_name"></span> <br>
+      <strong>用户头像： </strong> <br>
+      <img class="user_avatar" src="" alt="avatar"> <br>
+      <strong>帖子主题： </strong> <br>
+      <span class="topic"></span> <br>
+      <hr>
+    </section>
+    <section>
+      <strong>用户名： </strong> <br>
+      <span class="user_name"></span> <br>
+      <strong>用户头像： </strong> <br>
+      <img class="user_avatar" src="" alt="avatar"> <br>
+      <strong>帖子主题： </strong> <br>
+      <span class="topic"></span> <br>
+      <hr>
+    </section>
+    <section>
+      <strong>用户名： </strong> <br>
+      <span class="user_name"></span> <br>
+      <strong>用户头像： </strong> <br>
+      <img class="user_avatar" src="" alt="avatar"> <br>
+      <strong>帖子主题： </strong> <br>
+      <span class="topic"></span> <br>
+      <hr>
+    </section>
+    <section>
+      <strong>用户名： </strong> <br>
+      <span class="user_name"></span> <br>
+      <strong>用户头像： </strong> <br>
+      <img class="user_avatar" src="" alt="avatar"> <br>
+      <strong>帖子主题： </strong> <br>
+      <span class="topic"></span> <br>
+      <hr>
+    </section>
+    <section>
+      <strong>用户名： </strong> <br>
+      <span class="user_name"></span> <br>
+      <strong>用户头像： </strong> <br>
+      <img class="user_avatar" src="" alt="avatar"> <br>
+      <strong>帖子主题： </strong> <br>
+      <span class="topic"></span> <br>
+      <hr>
+    </section>
+  </section>
+
+  <section id="postData">
+    <h4>新建　POST</h4>
+    <hr>
+    <form action="">
+      <strong>标题</strong>
+      <input class="post_title" type="text" name="title" required="required"> <br>
+      <strong>类型</strong>
+      <select class="post_tab" name="tab"> <br>
+        <option value="ask">问答</option>
+        <option value="share" selected="selected">分享</option>
+        <option value="job">招聘</option>
+      </select> <br>
+      <strong>内容</strong> <br>
+      <textarea class="post_content" name="content" rows="8" cols="40" required="required"></textarea> <br>
+      <input class="post_submit" type="submit" value="提交">
+    </form>
+  </section>
+
+  <script  type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

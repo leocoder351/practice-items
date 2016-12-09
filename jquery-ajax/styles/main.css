@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+body > header {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+#getData {
+  width: 400px;
+  border: 5px solid #66ad53;
+  text-align: center;
+  float: left;
+}
+
+.user_name {
+  margin: 10px 0 10px 0;
+  color: #e03232;
+}
+
+.user_avatar {
+  margin: 10px 0 10px 0;
+  border: 5px solid #6e6bdb;
+  width: 120px;
+  height: 120px;
+}
+
+.topic {
+  margin: 10px 0 10px 0;
+  color: #810f9e;
+}
+
+#postData {
+  width: 400px;
+  border: 5px solid #66ad53;
+  margin-left: 10px;
+  float: left;
+}
+
+.post_title {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.post_tab {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.post_content {
+  margin-top: 10px;
+}
+
+.post_submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
