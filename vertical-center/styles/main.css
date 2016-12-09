@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+body > hr {
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#vertical_align div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+
+}
+
+#vertical_align span {
+  vertical-align: middle;
+  border: 1px solid black;
+
+}
+
+.singleLine {
+  border: 1px solid red;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
