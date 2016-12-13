@@ -1,0 +1,12 @@
+{
+  "tweets": [
+    {
+      "name": "Tom",
+      "age":  25
+    },
+    {
+      "name": "Peter",
+      "age":  31      
+    }
+  ]
+}
