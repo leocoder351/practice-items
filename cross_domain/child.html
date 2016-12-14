@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>child</title>
+  </head>
+  <body>
+    <h1>this is child page</h1>
+    <input id="button" type="button" value="调用parent.html中的say()函数" onclick="callParent()"/>
+    <script>
+
+    // function say(){
+    //   alert("child.html");
+    // }
+    function callParent(){
+      parent.window.say();
+      parent.window.document.getElementById("button").value="调用结束";
+    }
+
+    window.onhashchange = function() {
+      var message = window.location.hash;
+      // parent.window.location.href = 'http://localhost:8000/parent.html' + window.location.hash;
+      console.log(111);
+      console.log(parent.window.document);
+      console.log(message);
+    }
+
+    console.log(parent.window);
+    </script>
+  </body>
+</html>
