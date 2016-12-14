@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  overflow: auto;
+  position: relative;
+  border: 1px solid black;
+}
+
+/* basic styles */
+
+.mall-header h1 {
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 1%;
+}
+
+.mall-header img[alt^=small] {
+  position: absolute;
+  top: 0px;
+  left: 44%;
+  transform: scale(0.2, 0.2);
+  opacity: 0;
+}
+
+
+.mall-header img[alt=basket] {
+  position: absolute;
+  right: 1%;
+}
+
+.mall-header hr {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #787877;
+}
+
+.clothes {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.clothes > div {
+  text-align: center;
+  display: inline-block;
+  padding-right: 28%;
+  margin-bottom: 65px;
+}
+
+.clothes img {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #f0f0f0;
+  cursor: pointer;
+  outline: none;
+}
+
+.clothes p {
+  margin-bottom: 20px;
+}
+
+.clothes div:nth-child(3), .clothes div:nth-child(6) {
+  padding-right: 0;
+}
+
+/* interactive */
+
+.buttonDisabled {
+  background-color: #cbcbcb;
+  color: #464343;
+  cursor: wait;
+}
+
+/* animation */
+.addToBasket {
+  animation: smallT 1s ease-out 0s 1 normal;
+}
+
+
+/* keyframes */
+@keyframes smallT {
+  0% {
+    top: 0px;
+    left: 44%;
+    opacity: 0;
+  }
+  100% {
+    top: -8%;
+    left: 91%;
+    opacity: 1;
+  }
+}

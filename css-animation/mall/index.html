@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>网上购物商城</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header class="mall-header">
+    <h1>Sports Clothing</h1>
+    <img src="img/t-1.jpg" alt="small-t1">
+    <img src="img/t-2.jpg" alt="small-t2">
+    <img src="img/t-3.jpg" alt="small-t3">
+    <img src="img/basket.png" alt="basket">
+    <hr>
+  </header>
+
+  <section class="clothes">
+    <div>
+      <img src="img/t-1.jpg" alt="t1">
+      <p>Green T-Shirt</p>
+      <button name="t-1">Add to Basket</button>
+    </div>
+    <div>
+      <img src="img/t-2.jpg" alt="t2">
+      <p>Yellow T-Shirt</p>
+      <button name="t-2">Add to Basket</button>
+    </div>
+    <div>
+      <img src="img/t-3.jpg" alt="t3">
+      <p>Pink T-Shirt</p>
+      <button name="t-3">Add to Basket</button>
+    </div>
+    <div>
+      <img src="img/t-1.jpg" alt="t1">
+      <p>Green T-Shirt</p>
+      <button name="t-1">Add to Basket</button>
+    </div>
+    <div>
+      <img src="img/t-2.jpg" alt="t2">
+      <p>Yellow T-Shirt</p>
+      <button name="t-2">Add to Basket</button>
+    </div>
+    <div>
+      <img src="img/t-3.jpg" alt="t3">
+      <p>Pink T-Shirt</p>
+      <button name="t-3">Add to Basket</button>
+    </div>
+  </section>
+
+  <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script>
+    $("button[name=t-1]").click(function() {
+      var that = this;
+
+      $(this).attr('disabled', 'disabled').addClass("buttonDisabled");
+      $(".mall-header img[alt$=t1]").addClass('addToBasket');
+
+      setTimeout(function() {
+
+        $(that).removeAttr('disabled').removeClass("buttonDisabled");
+        $(".mall-header img[alt$=t1]").removeClass('addToBasket');
+      }, 1000);
+    })
+    $("button[name=t-2]").click(function() {
+      var that = this;
+
+      $(this).attr('disabled', 'disabled').addClass("buttonDisabled");
+      $(".mall-header img[alt$=t2]").addClass('addToBasket');
+
+      setTimeout(function() {
+
+        $(that).removeAttr('disabled').removeClass("buttonDisabled");
+        $(".mall-header img[alt$=t2]").removeClass('addToBasket');
+      }, 1000);
+    })
+    $("button[name=t-3]").click(function() {
+      var that = this;
+
+      $(this).attr('disabled', 'disabled').addClass("buttonDisabled");
+      $(".mall-header img[alt$=t3]").addClass('addToBasket');
+
+      setTimeout(function() {
+
+        $(that).removeAttr('disabled').removeClass("buttonDisabled");
+        $(".mall-header img[alt$=t3]").removeClass('addToBasket');
+      }, 1000);
+    })
+  </script>
+</body>
+</html>
