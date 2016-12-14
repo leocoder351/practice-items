@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  padding: 10px;
+}
+
+.animation div:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  background-color: #f0cb08;
+  animation: Num1Animation 5s linear 1s infinite normal;
+}
+
+@keyframes Num1Animation {
+  0% {
+    width: 100px;
+  }
+
+  25% {
+    width: 200px;
+  }
+
+  50% {
+    width: 300px;
+  }
+
+  75% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100px;
+  }
+}
