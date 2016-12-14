@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  padding: 10px;
+}
+
+@font-face {
+  font-family: ARBERKLEY;
+  src: url(http://oi43jl1yt.bkt.clouddn.com/font-face/ARBERKLEY.ttf);
+}
+
+@font-face {
+  font-family: Agent_Orange;
+  src: url(http://oi43jl1yt.bkt.clouddn.com/font-face/Agent_Orange.TTF);
+
+}
+
+.font-face div p:nth-child(1) {
+  font-size: 100px;
+  font-family: ARBERKLEY;
+  font-weight: bold;
+}
+
+.font-face div p:nth-child(2) {
+  font-size: 100px;
+  font-family: Agent_Orange;
+}

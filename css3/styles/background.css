@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  padding: 10px;
+}
+
+body > div {
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+body > div h2 {
+  margin-bottom: 20px;
+}
+
+/* background-clip */
+
+.background-clip div:nth-child(2) {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  border: 10px dotted pink;
+  background-clip: border-box;
+}
+
+.background-clip div:nth-child(3) {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  border: 10px dotted pink;
+  background-clip: content-box;
+}
+
+.background-clip div:nth-child(4) {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: red;
+  border: 10px dotted pink;
+  background-clip: padding-box;
+}
+
+/* background-origin */
+
+.background-origin div:nth-child(2) {
+  color: blue;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 20px dotted black;
+  padding: 50px;
+  margin-bottom: 10px;
+  background-image: url(http://material.mediav.com/galileo/20160510/72715cb77961aa37996f6d9fe67c1697.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-origin: padding-box;
+}
+
+.background-origin div:nth-child(3) {
+  color: blue;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 20px dotted black;
+  padding: 50px;
+  margin-bottom: 10px;
+  background-image: url(http://material.mediav.com/galileo/20160510/72715cb77961aa37996f6d9fe67c1697.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-origin: border-box;
+}
+
+.background-origin div:nth-child(4) {
+  color: blue;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 20px dotted black;
+  padding: 50px;
+  margin-bottom: 10px;
+  background-image: url(http://material.mediav.com/galileo/20160510/72715cb77961aa37996f6d9fe67c1697.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-origin: content-box;
+}
+
+/* background-size */
+
+.background-size div:nth-child(2) {
+  width: 300px;
+  height: 200px;
+  border: 5px solid black;
+  background-image: url(http://material.mediav.com/galileo/20160510/72715cb77961aa37996f6d9fe67c1697.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% 100%;
+}
+
+.background-size div:nth-child(3) {
+  width: 300px;
+  height: 200px;
+  border: 5px solid black;
+  background-image: url(http://material.mediav.com/galileo/20160510/72715cb77961aa37996f6d9fe67c1697.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% 100px;
+}
