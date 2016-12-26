@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML5</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <section class="local-storage">
+    <h2>换皮肤</h2>
+    <hr>
+    <button name="set-red">红色</button>
+    <button name="set-blue">蓝色</button>
+    <button name="set-green">绿色</button>
+  </section>
+
+  <section>
+    <h2>表单</h2>
+    <hr>
+    <form action="main.css" method="get" autocomplete="on">
+      城市： <input list="datalist-city" autofocus> <br>
+      <datalist id="datalist-city">
+        <option value="Beijin">Beijin</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Shanxi">Shanxi</option>
+      </datalist>
+      <input type="radio" name="gender" value="male"> 男
+      <input type="radio" name="gender" value="female"> 女 <br>
+      <input type="text"> <br>
+      <input type="file" multiple> <br>
+      <input type="submit" value="提交">
+    </form>
+  </section>
+
+  <section>
+    <h2>Canvas</h2>
+    <hr>
+    <canvas id="my-canvas" width="800" height="400">您的浏览器不支持Canvas</canvas>
+  </section>
+
+  <script src="scripts/canvas.js"></script>
+  <script src="scripts/change-color.js"></script>
+</body>
+</html>

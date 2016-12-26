@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  background-color: #e7e7ff;
+}
+
+/* icon-font */
+section.icon-font i {
+  margin-right: 5px;
+}
+
+section.structure-pseudo table {
+  max-width: 100%;
+  font-size: 16px;
+  table-layout: auto;
+  empty-cells: show;
+  border: 1px solid #cad9ea;
+  border-collapse: collapse;
+  margin: 0 auto;
+  color: #666;
+}
+
+section.structure-pseudo table th {
+  height: 30px;
+  border: 1px solid black;
+  overflow: hidden;
+  padding: 0.5em 1.5em;
+  border: 1px solid #cad9ea;
+}
+
+section.structure-pseudo table td {
+  height: 20px;
+  border: 1px solid #cad9ea;
+  text-align: center;
+}
+
+section.structure-pseudo table tr:nth-child(2n+1) {
+  background-color: #f5fafe;
+}
+
+section.menu ul {
+  max-width: 1100px;
+  box-sizing: border-box;
+}
+
+section.menu li {
+  list-style: none;
+  float: left;
+  height: 20px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+section.menu ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+section.menu li:nth-of-type(3n+1) {
+  font-weight: bold;
+  border-right: 1px dotted #373737;
+}
+
+section.menu li:nth-of-type(3n+3) {
+  border-right: 1px solid black;
+  padding-right: 2px;
+}
+
+section.formInput fieldset {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+section.formInput fieldset input {
+  width: 20%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+section.formInput input[name="name"] {
+  background: url(username.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+section.formInput input[name="name"]:focus {
+  background-color: #a1a1a1;
+  color: #fff;
+}
+
+section.formInput input[name="passwd"] {
+  background: url(password.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+section.formInput button[type="submit"] {
+  width: 70px;
+  margin-left: 45px;
+  border-radius: 5px;
+  background-color: #3278ff;
+  color: #fff;
+  letter-spacing: 0.2em;
+}

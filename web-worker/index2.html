@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>web-worker</title>
+</head>
+
+<body>
+  <p id="support">您的浏览器不支持 HTML5 Web Workers</p>
+  <button id="stopBtn">停止任务</button>
+  <button id="helloBtn">发送消息</button>
+
+  <script>
+    window.onload = function() {
+      if (typeof(Worker) !== undefined) {
+        document.querySelector("#support").innerHTML = "您的浏览器支持 HTML5 Web Workers";
+
+        var worker2 = new Worker("scripts/worker2.js");
+
+        document.querySelector("#helloBtn").onclick = function() {
+          worker2.postMessage("hello world");
+        }
+
+        document.querySelector("#stopBtn").onclick = function() {
+          worker2.terminate();
+        }
+
+        worker2.onmessage = function(event) {
+          console.log(event.data);
+        }
+
+        worker2.onerror = function(error) {
+          console.log(error);
+
+        }
+      }
+    }
+  </script>
+</body>
+</html>
